@@ -1,0 +1,131 @@
+/* Notifications List & Status Container Styles */
+.notifications-list-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.notification-status-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3.5rem 1.5rem;
+  background-color: var(--color-bg-card);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-lg);
+  max-width: 600px;
+  margin: 1.5rem auto;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  animation: fadeInStatus 0.3s ease;
+}
+
+@keyframes fadeInStatus {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.status-graphic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  border-radius: var(--radius-full);
+  margin-bottom: 1.5rem;
+}
+
+.empty-state .status-graphic {
+  background-color: var(--color-primary-light);
+}
+
+.error-state .status-graphic {
+  background-color: rgba(220, 38, 38, 0.08);
+}
+
+.status-icon {
+  font-size: 2.25rem;
+}
+
+.empty-icon {
+  color: var(--color-primary);
+}
+
+.error-icon {
+  color: var(--color-placement);
+}
+
+.notification-status-container h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.status-desc {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  max-width: 380px;
+  margin-bottom: 1.75rem;
+  line-height: 1.5;
+}
+
+.btn-retry {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.65rem 1.5rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-fast);
+}
+
+.btn-retry:hover {
+  background-color: var(--color-primary-hover);
+  transform: translateY(-1px);
+}
+
+.btn-retry:active {
+  transform: translateY(0);
+}
+
+.btn-sec {
+  background-color: var(--color-bg-app);
+  color: var(--color-text-secondary);
+  border: 1px solid var(--color-border);
+  box-shadow: none;
+}
+
+.btn-sec:hover {
+  background-color: var(--color-border);
+  color: var(--color-text-primary);
+  transform: none;
+}
+
+.retry-spinner-icon {
+  font-size: 0.95rem;
+}
+
+.btn-retry:hover .retry-spinner-icon {
+  animation: spin-retry 1s linear infinite;
+}
+
+@keyframes spin-retry {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,81 @@
+/* Global CSS Variables - Design System */
+:root {
+  /* Typography */
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Color Palette - Premium Corporate (Notion/Slack/Fluent inspired) */
+  --color-primary: #0a66c2;        /* LinkedIn Blue */
+  --color-primary-hover: #004182;
+  --color-primary-light: rgba(10, 102, 194, 0.1);
+  
+  /* Priority Colors */
+  --color-placement: #dc2626;      /* High Priority - Red */
+  --color-placement-bg: #fef2f2;
+  --color-placement-border: #fee2e2;
+  
+  --color-result: #2563eb;         /* Medium Priority - Blue */
+  --color-result-bg: #eff6ff;
+  --color-result-border: #dbeafe;
+  
+  --color-event: #16a34a;          /* Low Priority - Green */
+  --color-event-bg: #f0fdf4;
+  --color-event-border: #dcfce7;
+  
+  /* Neutral Palette */
+  --color-bg-app: #f4f5f7;         /* Soft grayish canvas */
+  --color-bg-card: #ffffff;
+  --color-bg-hover: #f8fafc;
+  --color-border: #e2e8f0;
+  
+  --color-text-primary: #1e293b;
+  --color-text-secondary: #475569;
+  --color-text-muted: #64748b;
+  
+  /* Semantic Colors */
+  --color-success: #15803d;
+  --color-warning: #b45309;
+  --color-danger: #b91c1c;
+  --color-info: #0369a1;
+  
+  /* Styling Tokens */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+  
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -4px rgba(0, 0, 0, 0.03);
+  --shadow-glow: 0 0 20px rgba(10, 102, 194, 0.15);
+  
+  /* Animations */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s ease;
+  --transition-slow: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  
+  /* Layout Sizing */
+  --header-height: 70px;
+  --sidebar-width: 320px;
+  --max-width: 1400px;
+}
+
+/* Dark mode overrides (optional utility classes) */
+.dark-theme {
+  --color-bg-app: #0f172a;
+  --color-bg-card: #1e293b;
+  --color-bg-hover: #334155;
+  --color-border: #334155;
+  
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #cbd5e1;
+  --color-text-muted: #94a3b8;
+  
+  --color-placement-bg: rgba(220, 38, 38, 0.15);
+  --color-placement-border: rgba(220, 38, 38, 0.3);
+  
+  --color-result-bg: rgba(37, 99, 235, 0.15);
+  --color-result-border: rgba(37, 99, 235, 0.3);
+  
+  --color-event-bg: rgba(22, 163, 74, 0.15);
+  --color-event-border: rgba(22, 163, 74, 0.3);
+}
